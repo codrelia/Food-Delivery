@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="181" id="KGk-i7-Jjw" customClass="PizzaTableViewCell" customModule="Pizza" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="181"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="4Jf-ru-cVr">
+                        <rect key="frame" x="16" y="10" width="132" height="132"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="132" id="tg6-Er-P33"/>
+                            <constraint firstAttribute="width" constant="132" id="ylk-wU-9Jt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ветчина и грибы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddS-KT-zUH">
+                        <rect key="frame" x="180" y="10" width="195" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYC-we-Nh9">
+                        <rect key="frame" x="180" y="39" width="195" height="46.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVy-xq-7li">
+                        <rect key="frame" x="303" y="129" width="72" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="цена короч"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Jf-ru-cVr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4gR-OT-2Pf"/>
+                    <constraint firstAttribute="bottom" secondItem="lVy-xq-7li" secondAttribute="bottom" constant="24" id="8Ag-95-ZR9"/>
+                    <constraint firstAttribute="trailing" secondItem="FYC-we-Nh9" secondAttribute="trailing" constant="24" id="8MW-VE-agb"/>
+                    <constraint firstItem="4Jf-ru-cVr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="HG5-fz-Psa"/>
+                    <constraint firstItem="FYC-we-Nh9" firstAttribute="leading" secondItem="4Jf-ru-cVr" secondAttribute="trailing" constant="32" id="Lm7-sq-p42"/>
+                    <constraint firstItem="FYC-we-Nh9" firstAttribute="top" secondItem="ddS-KT-zUH" secondAttribute="bottom" constant="8" id="M8u-zX-CiU"/>
+                    <constraint firstItem="lVy-xq-7li" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FYC-we-Nh9" secondAttribute="bottom" constant="16" id="QzQ-hz-ryP"/>
+                    <constraint firstItem="ddS-KT-zUH" firstAttribute="leading" secondItem="4Jf-ru-cVr" secondAttribute="trailing" constant="32" id="YE8-1M-Z3G"/>
+                    <constraint firstItem="ddS-KT-zUH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hdH-Qf-Y5b"/>
+                    <constraint firstAttribute="trailing" secondItem="ddS-KT-zUH" secondAttribute="trailing" constant="24" id="nWq-cU-eZV"/>
+                    <constraint firstAttribute="trailing" secondItem="lVy-xq-7li" secondAttribute="trailing" constant="24" id="tDG-sF-rQ6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coastButton" destination="lVy-xq-7li" id="aFe-WM-GRb"/>
+                <outlet property="descriptionLabel" destination="FYC-we-Nh9" id="jQP-C5-34f"/>
+                <outlet property="imageOfProducts" destination="4Jf-ru-cVr" id="aaU-BF-St1"/>
+                <outlet property="nameLabel" destination="ddS-KT-zUH" id="aTu-tm-Bf7"/>
+            </connections>
+            <point key="canvasLocation" x="48.46153846153846" y="36.611374407582936"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pizza" width="132" height="132"/>
+    </resources>
+</document>
